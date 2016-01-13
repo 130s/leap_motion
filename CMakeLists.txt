@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(leap_motion)
 
-find_package(catkin REQUIRED COMPONENTS roscpp rospy roslib std_msgs geometry_msgs message_generation sensor_msgs visualization_msgs camera_info_manager rospack camera_calibration_parsers)
+find_package(catkin REQUIRED COMPONENTS libgl1-mesa-glx-lts roscpp rospy roslib std_msgs geometry_msgs message_generation sensor_msgs visualization_msgs camera_info_manager rospack camera_calibration_parsers)
 
 find_package(OpenMP)
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${OpenMP_C_FLAGS}")
